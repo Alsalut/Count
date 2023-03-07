@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".CountDuolingo">
+
+    <ImageButton
+        android:id="@+id/btn_logo_duolingo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@id/tv_duolingo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/duolingo_owl_512"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_duolingo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/btn_plus_duolingo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_logo_duolingo" />
+
+    <ImageButton
+        android:id="@+id/btn_del_duolingo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_plus_duolingo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_duolingo"
+        app:srcCompat="@drawable/btn_del_dark_256"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/btn_plus_duolingo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_del_duolingo"
+        app:layout_constraintTop_toBottomOf="@id/tv_duolingo"
+        app:srcCompat="@drawable/btn_plus_dark_256"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,VisualLintBounds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
